@@ -1,0 +1,15 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  date: 2024-02-20
+  sign: MyString
+  text_work: MyText
+  text_love: MyText
+  text_money: MyText
+
+two:
+  date: 2024-02-20
+  sign: MyString
+  text_work: MyText
+  text_love: MyText
+  text_money: MyText
