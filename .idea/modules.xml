@@ -2,7 +2,10 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+<<<<<<< HEAD
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/.iml" filepath="$PROJECT_DIR$/.idea/modules/.iml" />
+=======
+>>>>>>> dd955a0f55513c581f22b134f57f27ba56669eaa
       <module fileurl="file://$PROJECT_DIR$/.idea/horoscope.iml" filepath="$PROJECT_DIR$/.idea/horoscope.iml" />
     </modules>
   </component>
