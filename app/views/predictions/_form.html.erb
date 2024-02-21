@@ -19,9 +19,6 @@
   <% end %>
 
   <div class="form-group">
-    <%= form.label :date, style: "display: block" %>
-    <%= form.date_field :date, value: Date.today %>
-  </div>
     <%= form.label :date, class: "col-sm-2 control-label" %>
     <div class="col-sm-10">
       <%= form.date_field :date, class: "form-control" %>
