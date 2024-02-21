@@ -4,7 +4,7 @@
   <link href="../../app/assets/stylesheets/style.css" rel="stylesheet">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
 </head>
-
+<body>
 <%= form_with(model: prediction, class: "form-horizontal") do |form| %>
   <% if prediction.errors.any? %>
     <div style="color: red">
@@ -59,3 +59,4 @@
     </div>
   </div>
 <% end %>
+</body>
