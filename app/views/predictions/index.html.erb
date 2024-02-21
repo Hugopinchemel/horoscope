@@ -4,18 +4,19 @@
     <link href="../../app/assets/stylesheets/reset.css" rel="stylesheet">
     <link href="../../app/assets/stylesheets/style.css" rel="stylesheet">
   </head>
-<p style="color: green"><%= notice %></p>
+  <p style="color: green"><%= notice %></p>
 
-<h1>Predictions</h1>
+  <h1>Predictions</h1>
 
-<div id="predictions">
-  <% @predictions.each do |prediction| %>
-    <p>horoscope du <%= prediction.date %> pour le <%= prediction.sign %></p>
-    <p>
-      <%= link_to "voir l'horoscope du jour", prediction %>
-    </p>
-  <% end %>
-</div>
+  <div id="predictions">
+    <% @predictions.each do |prediction| %>
+      <p>horoscope du <%= prediction.date %> pour le <%= prediction.sign %></p>
+      <p>
+        <%= link_to "voir l'horoscope du jour", prediction %>
+      </p>
+    <% end %>
+  </div>
 
+  <h2>Les 12 signes du zodiaque :</h2>
 
-<%= link_to "New prediction", new_prediction_path %>
+  <%= link_to "New prediction", new_prediction_path %>
