@@ -4,8 +4,7 @@
   <link href="../../app/assets/stylesheets/reset.css" rel="stylesheet">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
 </head>
-
-<%= form_with(model: prediction, class: "form-horizontal") do |form| %>
+<%= form_with(model: prediction) do |form| %>
   <% if prediction.errors.any? %>
     <div style="color: red">
       <h2><%= pluralize(prediction.errors.count, "error") %> prohibited this prediction from being saved:</h2>
@@ -18,44 +17,32 @@
     </div>
   <% end %>
 
-  <div class="form-group">
-    <%= form.label :date, class: "col-sm-2 control-label" %>
-    <div class="col-sm-10">
-      <%= form.date_field :date, class: "form-control" %>
-    </div>
+  <div>
+    <%= form.label :date, style: "display: block" %>
+    <%= form.date_field :date %>
   </div>
 
-  <div class="form-group">
-    <%= form.label :sign, class: "col-sm-2 control-label" %>
-    <div class="col-sm-10">
-      <%= form.text_field :sign, class: "form-control" %>
-    </div>
+  <div>
+    <%= form.label :sign, style: "display: block" %>
+    <%= form.text_field :sign %>
   </div>
 
-  <div class="form-group">
-    <%= form.label :text_work, class: "col-sm-2 control-label" %>
-    <div class="col-sm-10">
-      <%= form.text_area :text_work, class: "form-control" %>
-    </div>
+  <div>
+    <%= form.label :text_work, style: "display: block" %>
+    <%= form.text_area :text_work %>
   </div>
 
-  <div class="form-group">
-    <%= form.label :text_love, class: "col-sm-2 control-label" %>
-    <div class="col-sm-10">
-      <%= form.text_area :text_love, class: "form-control" %>
-    </div>
+  <div>
+    <%= form.label :text_love, style: "display: block" %>
+    <%= form.text_area :text_love %>
   </div>
 
-  <div class="form-group">
-    <%= form.label :text_money, class: "col-sm-2 control-label" %>
-    <div class="col-sm-10">
-      <%= form.text_area :text_money, class: "form-control" %>
-    </div>
+  <div>
+    <%= form.label :text_money, style: "display: block" %>
+    <%= form.text_area :text_money %>
   </div>
 
-  <div class="form-group">
-    <div class="col-sm-offset-2 col-sm-10">
-      <%= form.submit "Save", class: "btn btn-primary" %>
-    </div>
+  <div>
+    <%= form.submit %>
   </div>
 <% end %>
