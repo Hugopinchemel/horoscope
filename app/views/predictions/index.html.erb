@@ -10,11 +10,12 @@
 
 <div id="predictions">
   <% @predictions.each do |prediction| %>
-    <%= render prediction %>
+    <p>horoscope du <%= prediction.date %> pour le <%= prediction.sign %></p>
     <p>
-      <%= link_to "Show this prediction", prediction %>
+      <%= link_to "voir l'horoscope du jour", prediction %>
     </p>
   <% end %>
 </div>
+
 
 <%= link_to "New prediction", new_prediction_path %>
