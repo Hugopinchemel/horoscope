@@ -1,8 +1,15 @@
 
+@font-face {
+    font-family: 'Tan Moncheri';
+    src: url('../font/tan-moncheri.woff2') format('woff2'),
+         url('../font/tan-moncheri.woff') format('woff'),
+         url('../font/tan-moncheri.ttf')  format('truetype'),
+}
+
 body{
-    font
+    
     background-color: #26367F;
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Tan Moncheri';
     font-size: 16px;
     line-height: 1.6;
     margin: 0;
