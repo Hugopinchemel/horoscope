@@ -1,11 +1,8 @@
 <head>
-  <title>Horoscope</title>
-  <%= csrf_meta_tags %>
-  <%= csp_meta_tag %>
-  <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-  <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
-  <link href="../../app/assets/stylesheets/style.css" rel="stylesheet">
-  <link href"../../app/assets/stylesheets/reset.css" rel="stylesheet">
+<title>horoscope</title>
+<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+<link href="../../app/assets/stylesheets/style.css" rel="stylesheet">
+<link href"../../app/assets/stylesheets/reset.css" rel="stylesheet">
 </head>
 <%= form_with(model: prediction) do |form| %>
   <% if prediction.errors.any? %>
