@@ -1,3 +1,11 @@
+<head>
+  <title>Horoscope</title>
+  <%= csrf_meta_tags %>
+  <%= csp_meta_tag %>
+  <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+  <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
 <%= form_with(model: prediction) do |form| %>
   <% if prediction.errors.any? %>
     <div style="color: red">
@@ -11,32 +19,47 @@
     </div>
   <% end %>
 
-  <div>
-    <%= form.label :date, style: "display: block" %>
-    <%= form.date_field :date %>
-  </div>
+  <div class="container">
+    <%= form_with(model: prediction, class: "form") do |form| %>
+      <% if prediction.errors.any? %>
+        <div style="color: red">
+          <h2><%= pluralize(prediction.errors.count, "error") %> prohibited this prediction from being saved:</h2>
 
-  <div>
-    <%= form.label :sign, style: "display: block" %>
-    <%= form.text_field :sign %>
-  </div>
+          <ul>
+            <% prediction.errors.each do |error| %>
+              <li><%= error.full_message %></li>
+            <% end %>
+          </ul>
+        </div>
+      <% end %>
 
-  <div>
-    <%= form.label :text_work, style: "display: block" %>
-    <%= form.text_area :text_work %>
-  </div>
+      <div class="form-group">
+        <%= form.label :date, class: "form-label", style: "display: block" %>
+        <%= form.date_field :date, class: "form-control" %>
+      </div>
 
-  <div>
-    <%= form.label :text_love, style: "display: block" %>
-    <%= form.text_area :text_love %>
-  </div>
+      <div class="form-group">
+        <%= form.label :sign, class: "form-label", style: "display: block" %>
+        <%= form.text_field :sign, class: "form-control" %>
+      </div>
 
-  <div>
-    <%= form.label :text_money, style: "display: block" %>
-    <%= form.text_area :text_money %>
-  </div>
+      <div class="form-group">
+        <%= form.label :text_work, class: "form-label", style: "display: block" %>
+        <%= form.text_area :text_work, class: "form-control" %>
+      </div>
 
-  <div>
-    <%= form.submit %>
+      <div class="form-group">
+        <%= form.label :text_love, class: "form-label", style: "display: block" %>
+        <%= form.text_area :text_love, class: "form-control" %>
+      </div>
+
+      <div class="form-group">
+        <%= form.label :text_money, class: "form-label", style: "display: block" %>
+        <%= form.text_area :text_money, class: "form-control" %>
+      </div>
+
+      <div class="form-group">
+        <%= form.submit "Save", class: "btn btn-primary" %>
+      </div>
+    <% end %>
   </div>
-<% end %>
