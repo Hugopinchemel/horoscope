@@ -21,3 +21,8 @@ h1, h2, h3, h4, h5, h6, p, .predictions {
     color: #ffffff;
 }
 
+form{
+    font-family: 'Tan Moncheri', sans-serif !important;
+    color: #ffffff;
+    background-color: #26367F !important;
+}
