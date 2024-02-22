@@ -5,8 +5,8 @@ class PredictionsController < ApplicationController
   def index
     @sign = params[:sign]
     @predictions = Prediction.where(sign: @sign)
+    @prediction = @predictions.order(created_at: :desc).first
   end
-
   # GET /predictions/1 or /predictions/1.json
   def show
   end

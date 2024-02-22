@@ -1,13 +1,13 @@
 <p style="color: green"><%= notice %></p>
 
-
-
 <div id="predictions">
-  <% @predictions.each do |prediction| %>
-    <%= render prediction %>
+  <% if @prediction %>
+    <%= render @prediction %>
     <p>
-      <%= link_to "Show this prediction", prediction %>
+      <%= link_to "Show this prediction", @prediction %>
     </p>
+  <% else %>
+    <p>Il n'y a pas de prédiction pour ce signe pour le moment, <br> mais ne vous inquiétez pas, nos astrologues professionnels sont au travail.</p>
   <% end %>
 </div>
 

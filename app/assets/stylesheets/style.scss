@@ -173,18 +173,18 @@ body {
         color: gold;
     }
     
-    .background-bulle{
-        border-radius: 10px;
-        padding: 10px;
-        margin: 10px;
-    }
-
     .form-group{
         font-family: $font-stack2;
         font-size: 1.5em;
         font-weight: 1000;
         font-style: normal;
         color: gold;
+    }
+    .fond-photo{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        transform: translate(0, 70vh);
     }
 }
 
@@ -206,7 +206,7 @@ footer{
         color: white;
         text-align: center;
         }
-        
+
     .footer-p{
         font-family: $font-stack;
         font-size: 1em;
