@@ -1,22 +1,138 @@
-@import url('https://fonts.googleapis.com/css2?family=Jacquarda+Bastarda+9&display=swap');
+@font-face {
+    font-family: TAN-MONCHERI;
+    src: url(app/assets/font/TAN-MONCHERI.woff2);
+}
 
-html, body{
-    
+html,
+body {
+
     background-color: #26367F;
-    font-family: 'Jacquarda Bastarda 9', sans-serif !important;
+    font-family: 'TAN-MONCHERI', sans-serif !important;
     font-size: 16px;
     line-height: 1.6;
     margin-left: 20px;
-color: #ffffff;
-}
-
-h1, h2, h3, h4, h5, h6, p, .predictions {
-    font-family: 'Jacquarda Bastarda 9', sans-serif !important;
     color: #ffffff;
 }
 
-form{
-    font-family: 'Tan Moncheri', sans-serif !important;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+.predictions {
+    font-family: 'TAN-MONCHERI', sans-serif !important;
+    color: #ffffff;
+}
+
+form {
+    font-family: 'TAN-MONCHERI', sans-serif !important;
     color: #ffffff;
     background-color: #26367F !important;
+}
+
+#circle {
+    position: relative;
+    width: 35vw;
+    height: 35vw;
+    border: 5px ridge gold;
+    border-radius: 50%;
+    margin: 0 auto;
+}
+
+.zodiac {
+    color: black;
+    position: absolute;
+    width: 6vw;
+    height: 6vw;
+    text-align: center;
+    line-height: 5vw;
+    border-radius: 50%;
+    background: white;
+    cursor: pointer;
+
+}
+
+#Belier {
+    top: 20%;
+    left: 10%;
+    transform: translate(0, -50%);
+}
+
+#Taureau {
+    top: 20%;
+    left: 80%;
+    transform: translate(-50%, -50%);
+}
+
+#Gemeaux {
+    top: 70%;
+    left: 80%;
+    transform: translate(-50%, 0);
+}
+
+#Cancer {
+    top: 80%;
+    left: 20%;
+    transform: translate(-50%, -50%);
+}
+
+#Lion {
+    top: 50%;
+    left: 100%;
+    transform: translate(-100%, -50%);
+}
+
+#Vierge {
+    top: 65%;
+    left: 65%;
+    transform: translate(-50%, -50%);
+}
+
+#Balance {
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%, -100%);
+}
+
+#Scorpion {
+    top: 65%;
+    left: 35%;
+    transform: translate(-50%, -50%);
+}
+
+#Sagittaire {
+    top: 50%;
+    left: 0;
+    transform: translate(0, -50%);
+}
+
+#Capricorne {
+    top: 35%;
+    left: 35%;
+    transform: translate(-50%, -50%);
+}
+
+#Verseau {
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+
+#Poissons {
+    top: 35%;
+    left: 65%;
+    transform: translate(-50%, -50%);
+}
+
+#prediction {
+    text-align: center;
+    margin-top: 20px;
+    text-align: center;
+    margin-top: 20px;
+    height: 50vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
