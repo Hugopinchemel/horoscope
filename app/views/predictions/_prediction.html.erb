@@ -3,33 +3,33 @@
     <title>horoscope</title>
   </head>
 
-  <body>
-<div id="<%= dom_id prediction %>">
-  <p>
-    <strong>Date de l'horoscope:</strong>
-    <%= prediction.date %>
-  </p>
+<body>
+  <div id="<%= dom_id prediction %>">
+    <p>
+      <p class="nom-categorie">Date de l'horoscope:</p>
+      <%= prediction.date %>
+    </p>
 
-  <p>
-    <strong>Signe:</strong>
-    <%= prediction.sign %>
-  </p>
+    <p>
+      <p class="nom-categorie">Signe:</p>
+      <%= prediction.sign %>
+    </p>
 
-  <p>
-    <strong>Votre travail:</strong>
-    <%= prediction.text_work %>
-  </p>
+    <p>
+      <p class="nom-categorie">Votre travail:</p>
+      <%= prediction.text_work %>
+    </p>
 
-  <p>
-    <strong>Votre Vie Amoureuse:</strong>
-    <%= prediction.text_love %>
-  </p>
+    <p>
+      <p class="nom-categorie">Votre Vie Amoureuse:</p>
+      <%= prediction.text_love %>
+    </p>
 
-  <p>
-    <strong>Vos finances:</strong>
-    <%= prediction.text_money %>
-  </p>
+    <p>
+      <p class="nom-categorie">Vos finances:</p>
+      <%= prediction.text_money %>
+    </p>
 
-</div>
-  </body>
+  </div>
+</body>
 

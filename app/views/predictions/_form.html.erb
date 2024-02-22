@@ -1,59 +1,53 @@
 <head>
   <title>horoscope</title>
-</head>
-<body>
-<%= form_with(model: prediction, class: "form-horizontal") do |form| %>
-  <% if prediction.errors.any? %>
-    <div style="color: red">
-      <h2><%= pluralize(prediction.errors.count, "error") %> prohibited this prediction from being saved:</h2>
+  </head>
+  <body>
+  <%= form_with(model: prediction) do |form| %>
+    <% if prediction.errors.any? %>
+      <div style="color: red">
+        <h2><%= pluralize(prediction.errors.count, "error") %> prohibited this prediction from being saved:</h2>
 
-      <ul>
-        <% prediction.errors.each do |error| %>
-          <li><%= error.full_message %></li>
-        <% end %>
-      </ul>
-    </div>
-  <% end %>
+        <ul>
+          <% prediction.errors.each do |error| %>
+            <li><%= error.full_message %></li>
+          <% end %>
+        </ul>
+      </div>
+    <% end %>
 
-  <div class="form-group">
-    <%= form.label :date, class: "col-sm-2 control-label" %>
-    <div class="col-sm-10">
+    <div class="form-group">
+      <%= form.label :date %>
+            <br>
       <%= form.date_field :date, value: Date.today, class: "form-control", autocomplete: "on" %>
     </div>
-  </div>
 
-  <div class="form-group">
-    <%= form.label :sign, class: "col-sm-2 control-label" %>
-    <div class="col-sm-10">
-      <%= form.select :sign, options_for_select(["Belier", "Taureau", "Gemeaux", "Cancer", "Lion", "Vierge", "Balance", "Scorpion", "Sagittaire", "Capricorne", "Verseau", "Poissons"]), {}, class: "form-control" %>
+    <div class="form-group">
+      <%= form.label :sign %>
+            <br>
+      <%= form.select :sign, options_for_select(["Belier", "Taureau", "Gemeaux", "Cancer", "Lion", "Vierge", "Balance", "Scorpion", "Sagittaire", "Capricorne", "Verseau", "Poissons"]) %>
     </div>
-  </div>
 
-  <div class="form-group">
-    <%= form.label :text_work, class: "col-sm-2 control-label" %>
-    <div class="col-sm-10">
-      <%= form.text_area :text_work, class: "form-control" %>
+    <div class="form-group">
+      <%= form.label :text_work %>
+            <br>
+      <%= form.text_area :text_work %>
     </div>
-  </div>
 
-  <div class="form-group">
-    <%= form.label :text_love, class: "col-sm-2 control-label" %>
-    <div class="col-sm-10">
-      <%= form.text_area :text_love, class: "form-control" %>
+    <div class="form-group">
+      <%= form.label :text_love %>
+            <br>
+      <%= form.text_area :text_love %>
     </div>
-  </div>
 
-  <div class="form-group">
-    <%= form.label :text_money, class: "col-sm-2 control-label" %>
-    <div class="col-sm-10">
-      <%= form.text_area :text_money, class: "form-control" %>
+    <div class="form-group">
+      <%= form.label :text_money %>
+            <br>
+      <%= form.text_area :text_money %>
     </div>
-  </div>
 
-  <div class="form-group">
-    <div class="col-sm-offset-2 col-sm-10">
-      <%= form.submit "Save", class: "btn btn-primary" %>
+    <div class="form-group">
+      <%= form.submit "Save" %>
     </div>
-  </div>
-<% end %>
-</body>
+  <% end %>
+  </body>
+  

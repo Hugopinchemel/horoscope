@@ -2,12 +2,10 @@
 
 <html>
   <head>
-  <link href="../../app/assets/stylesheets/reset.css" rel="stylesheet">
-  <link href="../../app/assets/stylesheets/style.scss" rel="stylesheet">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Petit+Formal+Script&display=swap" rel="stylesheet">
-    <title>Horoscope</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Petit+Formal+Script&display=swap" rel="stylesheet">
+    <title>Monoroscope</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
@@ -17,7 +15,7 @@
   </head>
 
   <body>
-    <%= yield %>
+    
     <div id="circle">
       <a href="?sign=Belier">
         <div id="Belier" class="zodiac">Bélier</div>
@@ -57,7 +55,22 @@
         </a>
         
     </div>
-    <div id="prediction"></div>
-    
+    <div id="horoscope">
+      <div id="horoscope-title">
+        <h1>Monoroscope</h1>
+        <h2>Horoscope d'un jour</h2>
+      </div>
+      <div id="horoscope-text">
+        <h3>Choisissez votre signe astrologique pour voir votre horoscope du jour</h3>
+      </div>
+    </div>
+    <div id="texte-horoscope">
+      <%= yield %>
   </body>
+  
+  <div class="background-bulle">
+  <footer>
+    <div id="footer">
+      <p class="footer-p">2024 Monoroscope. Tout droit reservé</p>
+    </div>
 </html>
