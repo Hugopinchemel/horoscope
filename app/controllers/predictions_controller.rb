@@ -9,6 +9,7 @@ class PredictionsController < ApplicationController
   end
   # GET /predictions/1 or /predictions/1.json
   def show
+    @prediction = Prediction.where(date: Date.today).first
   end
 
   # GET /predictions/new

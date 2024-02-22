@@ -45,7 +45,6 @@ body {
         font-family: $font-stack2;
         font-weight: 400;
         font-style: normal;
-        background-color: $background-color;
 
     }
 
@@ -187,14 +186,14 @@ body {
     position: fixed;
     bottom: 0;
     right: 0;
-    z-index: 1000;
+    z-index: -1000;
  }
 #bulle_droite {
     padding: 0px;
     position: fixed;
     bottom: 0;
     left: 0;
-    z-index: 1000;
+    z-index: -1000;
 }
 
 footer {
