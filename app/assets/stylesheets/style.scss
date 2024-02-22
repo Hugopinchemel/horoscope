@@ -13,7 +13,7 @@ body {
     margin-left: 20px;
     color: $color;
 
-    h1{
+    h1 {
         font-family: $font-stack2;
         font-size: 3em;
         font-weight: 1000;
@@ -21,7 +21,7 @@ body {
         color: gold;
     }
 
-    h2{
+    h2 {
         font-family: $font-stack2;
         font-size: 2em;
         font-weight: 1000;
@@ -29,16 +29,16 @@ body {
         color: gold;
     }
 
-    h3{
+    h3 {
         font-family: $font-stack;
         font-size: 1.5em;
         font-style: normal;
         color: white;
     }
 
-    a{
+    a {
         color: $color;
-        text-decoration: none;   
+        text-decoration: none;
     }
 
     form {
@@ -57,7 +57,7 @@ body {
         border-radius: 50%;
         margin: 0 auto;
         position: absolute;
-        translate: 60vw 10% 0;     
+        translate: 60vw 10% 0;
     }
 
     .zodiac {
@@ -165,49 +165,56 @@ body {
         color: white;
     }
 
-    .nom-categorie{
+    .nom-categorie {
         font-family: $font-stack2;
         font-size: 1.5em;
         font-weight: 1000;
         font-style: normal;
         color: gold;
     }
-    
-    .form-group{
+
+    .form-group {
         font-family: $font-stack2;
         font-size: 1.5em;
         font-weight: 1000;
         font-style: normal;
         color: gold;
-    }
-    .fond-photo{
-        position: absolute;
-        width: 100%;
-        height: 100%;
-        transform: translate(0, 70vh);
     }
 }
 
-footer{
+#bulle_gauche {
+    padding: 0px;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    z-index: 1000;
+ }
+#bulle_droite {
+    padding: 0px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+footer {
     position: absolute;
     bottom: 0;
     width: 100%;
     height: 50px;
-    background-color: $background-color;
     color: white;
     text-align: center;
-    
-    footer{
+
+    footer {
         position: absolute;
         bottom: 0;
         width: 100%;
-        height: 50px;
         background-color: transparent;
         color: white;
         text-align: center;
-        }
+    }
 
-    .footer-p{
+    .footer-p {
         font-family: $font-stack;
         font-size: 1em;
         font-weight: 400;
