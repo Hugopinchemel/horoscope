@@ -1,0 +1,112 @@
+$font-stack: 'Montserrat', sans-serif;
+$font-stack2: 'Petit Formal Script', cursive;
+$background-color: #26367F;
+$color: #ffffff;
+
+
+body {
+    background-color: $background-color;
+    font-family: $font-stack;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 1.6;
+    margin-left: 20px;
+    color: $color;
+
+
+    form{
+        font-family: $font-stack2;
+        font-weight: 400;
+        font-style: normal;
+        background-color: $background-color;
+    
+    }
+    #circle{
+        position: relative;
+        width: 35vw;
+        height: 35vw;
+        border: 5px ridge gold;
+        border-radius: 50%;
+        margin: 0 auto;
+    }
+    .zodiac {
+        font-family: $font-stack2;
+        color: black;
+        position: absolute;
+        width: 6vw;
+        height: 6vw;
+        text-align: center;
+        line-height: 5vw;
+        border-radius: 50%;
+        background: white;
+        cursor: pointer;
+    }
+
+    #Belier {
+        top: 20%;
+        left: 10%;
+    }
+    #Taureau {
+        top: 30%;
+        left: 20%;
+    }
+    #Gemeaux {
+        top: 30%;
+        left: 40%;
+    }
+    #Cancer {
+        top: 20%;
+        left: 60%;
+    }
+    #Lion {
+        top: 10%;
+        left: 70%;
+    }
+    #Vierge {
+        top: 30%;
+        left: 80%;
+    }
+    #Balance {
+        top: 50%;
+        left: 80%;
+    }
+    #Scorpion {
+        top: 70%;
+        left: 80%;
+    }
+    #Sagittaire {
+        top: 80%;
+        left: 70%;
+    }
+    #Capricorne {
+        top: 70%;
+        left: 60%;
+    }
+    #Verseau {
+        top: 50%;
+        left: 40%;
+    }
+    #Poissons {
+        top: 30%;
+        left: 20%;
+    }
+
+
+    #prediction {
+        text-align: center;
+        margin-top: 20px;
+        font-size: 1.5em;
+        height: 50vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    p {
+        font-family: $font-stack;
+        font-size: 1.5em;
+        font-weight: 400;
+        font-style: normal;
+        color: white;
+    }
+
+}
