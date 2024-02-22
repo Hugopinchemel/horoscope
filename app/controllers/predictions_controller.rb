@@ -3,7 +3,8 @@ class PredictionsController < ApplicationController
 
   # GET /predictions or /predictions.json
   def index
-    @predictions = Prediction.all
+    @sign = params[:sign]
+    @predictions = Prediction.where(sign: @sign)
   end
 
   # GET /predictions/1 or /predictions/1.json

@@ -1,37 +1,35 @@
 <html>
   <head>
     <title>horoscope</title>
-        <link href="../../app/assets/stylesheets/reset.css" rel="stylesheet">
-    <link href="../../app/assets/stylesheets/style.css" rel="stylesheet">
   </head>
 
-  <body>
-<div id="<%= dom_id prediction %>">
-  <p>
-    <strong>Date:</strong>
-    <%= prediction.date %>
-  </p>
+<body>
+  <div id="<%= dom_id prediction %>">
+    <p>
+      <p class="nom-categorie">Date de l'horoscope:</p>
+      <%= prediction.date %>
+    </p>
 
-  <p>
-    <strong>Sign:</strong>
-    <%= prediction.sign %>
-  </p>
+    <p>
+      <p class="nom-categorie">Signe:</p>
+      <%= prediction.sign %>
+    </p>
 
-  <p>
-    <strong>Text work:</strong>
-    <%= prediction.text_work %>
-  </p>
+    <p>
+      <p class="nom-categorie">Votre travail:</p>
+      <%= prediction.text_work %>
+    </p>
 
-  <p>
-    <strong>Text love:</strong>
-    <%= prediction.text_love %>
-  </p>
+    <p>
+      <p class="nom-categorie">Votre Vie Amoureuse:</p>
+      <%= prediction.text_love %>
+    </p>
 
-  <p>
-    <strong>Text money:</strong>
-    <%= prediction.text_money %>
-  </p>
+    <p>
+      <p class="nom-categorie">Vos finances:</p>
+      <%= prediction.text_money %>
+    </p>
 
-</div>
-  </body>
+  </div>
+</body>
 

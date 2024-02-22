@@ -1,0 +1,217 @@
+$font-stack: 'Montserrat', sans-serif;
+$font-stack2: 'Petit Formal Script', cursive;
+$background-color: #26367F;
+$color: #ffffff;
+
+
+body {
+    background-color: $background-color;
+    font-family: $font-stack;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 1.6;
+    margin-left: 20px;
+    color: $color;
+
+    h1{
+        font-family: $font-stack2;
+        font-size: 3em;
+        font-weight: 1000;
+        font-style: normal;
+        color: gold;
+    }
+
+    h2{
+        font-family: $font-stack2;
+        font-size: 2em;
+        font-weight: 1000;
+        font-style: normal;
+        color: gold;
+    }
+
+    h3{
+        font-family: $font-stack;
+        font-size: 1.5em;
+        font-style: normal;
+        color: white;
+    }
+
+    a{
+        color: $color;
+        text-decoration: none;   
+    }
+
+    form {
+        font-family: $font-stack2;
+        font-weight: 400;
+        font-style: normal;
+        background-color: $background-color;
+
+    }
+
+    #circle {
+        position: relative;
+        width: 35vw;
+        height: 35vw;
+        border: 5px ridge gold;
+        border-radius: 50%;
+        margin: 0 auto;
+        position: absolute;
+        translate: 60vw 10% 0;     
+    }
+
+    .zodiac {
+        font-family: $font-stack2;
+        color: black;
+        position: absolute;
+        font-size: 1.3em;
+        width: 6vw;
+        height: 6vw;
+        text-align: center;
+        line-height: 5vw;
+        border-radius: 50%;
+        background: white;
+        cursor: pointer;
+    }
+
+    #Belier {
+        top: 20%;
+        left: 13%;
+        transform: translate(0, -50%);
+    }
+
+    #Taureau {
+        top: 20%;
+        left: 79%;
+        transform: translate(-50%, -50%);
+    }
+
+    #Gemeaux {
+        top: 70%;
+        left: 80%;
+        transform: translate(-50%, 0);
+    }
+
+    #Cancer {
+        top: 80%;
+        left: 13%;
+        transform: translate(0%, -50%);
+    }
+
+    #Lion {
+        top: 50%;
+        left: 100%;
+        transform: translate(-100%, -50%);
+    }
+
+    #Vierge {
+        top: 65%;
+        left: 65%;
+        transform: translate(-50%, -50%);
+    }
+
+    #Balance {
+        top: 100%;
+        left: 50%;
+        transform: translate(-50%, -100%);
+    }
+
+    #Scorpion {
+        top: 65%;
+        left: 35%;
+        transform: translate(-50%, -50%);
+    }
+
+    #Sagittaire {
+        top: 50%;
+        left: 0;
+        transform: translate(0, -50%);
+    }
+
+    #Capricorne {
+        top: 35%;
+        left: 35%;
+        transform: translate(-50%, -50%);
+    }
+
+    #Verseau {
+        top: 0;
+        left: 50%;
+        transform: translate(-50%, 0);
+    }
+
+    #Poissons {
+        top: 35%;
+        left: 65%;
+        transform: translate(-50%, -50%);
+    }
+
+
+    #prediction {
+        text-align: center;
+        margin-top: 20px;
+        font-size: 1.5em;
+        height: 50vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    p {
+        font-family: $font-stack;
+        font-size: 2em;
+        font-weight: 400;
+        font-style: normal;
+        color: white;
+    }
+
+    .nom-categorie{
+        font-family: $font-stack2;
+        font-size: 1.5em;
+        font-weight: 1000;
+        font-style: normal;
+        color: gold;
+    }
+    
+    .background-bulle{
+        border-radius: 10px;
+        padding: 10px;
+        margin: 10px;
+    }
+
+    .form-group{
+        font-family: $font-stack2;
+        font-size: 1.5em;
+        font-weight: 1000;
+        font-style: normal;
+        color: gold;
+    }
+}
+
+footer{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 50px;
+    background-color: $background-color;
+    color: white;
+    text-align: center;
+    
+    footer{
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        height: 50px;
+        background-color: transparent;
+        color: white;
+        text-align: center;
+        }
+        
+    .footer-p{
+        font-family: $font-stack;
+        font-size: 1em;
+        font-weight: 400;
+        font-style: normal;
+        color: white;
+    }
+}
