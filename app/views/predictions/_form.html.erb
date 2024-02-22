@@ -2,7 +2,7 @@
   <title>horoscope</title>
   </head>
   <body>
-  <%= form_with(model: prediction) do |form| %>
+  <%= form_with(model: prediction, class: "form-horizontal") do |form| %>
     <% if prediction.errors.any? %>
       <div style="color: red">
         <h2><%= pluralize(prediction.errors.count, "error") %> prohibited this prediction from being saved:</h2>
@@ -16,37 +16,44 @@
     <% end %>
 
     <div class="form-group">
-      <%= form.label :date %>
-            <br>
-      <%= form.date_field :date, value: Date.today, class: "form-control", autocomplete: "on" %>
+      <%= form.label :date, class: "control-label 2" %>
+      <div class="col-6">
+        <%= form.date_field :date, value: Date.today, class: "form-control", autocomplete: "on" %>
+      </div>
     </div>
 
     <div class="form-group">
-      <%= form.label :sign %>
-            <br>
-      <%= form.select :sign, options_for_select(["Belier", "Taureau", "Gemeaux", "Cancer", "Lion", "Vierge", "Balance", "Scorpion", "Sagittaire", "Capricorne", "Verseau", "Poissons"]) %>
+      <%= form.label :sign, class: "control-label " %>
+      <div class="col-6">
+        <%= form.select :sign, options_for_select(["Belier", "Taureau", "Gemeaux", "Cancer", "Lion", "Vierge", "Balance", "Scorpion", "Sagittaire", "Capricorne", "Verseau", "Poissons"]), class: "form-control" %>
+      </div>
     </div>
 
     <div class="form-group">
-      <%= form.label :text_work %>
-            <br>
-      <%= form.text_area :text_work %>
+      <%= form.label :text_work, class: "control-label 2" %>
+      <div class="col-6">
+        <%= form.text_area :text_work, class: "form-control" %>
+      </div>
     </div>
 
     <div class="form-group">
-      <%= form.label :text_love %>
-            <br>
-      <%= form.text_area :text_love %>
+      <%= form.label :text_love, class: "control-label 2" %>
+      <div class="col-6">
+        <%= form.text_area :text_love, class: "form-control" %>
+      </div>
     </div>
 
     <div class="form-group">
-      <%= form.label :text_money %>
-            <br>
-      <%= form.text_area :text_money %>
+      <%= form.label :text_money, class: "control-label 2" %>
+      <div class="col-6">
+        <%= form.text_area :text_money, class: "form-control" %>
+      </div>
     </div>
 
     <div class="form-group">
-      <%= form.submit "Save" %>
+      <div class="col-6">
+        <%= form.submit "Save", class: "btn btn-primary" %>
+      </div>
     </div>
   <% end %>
   </body>
