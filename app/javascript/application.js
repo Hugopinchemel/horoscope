@@ -1,13 +1,34 @@
-// Configure your import map in config/importmap.rb. Read more: https://github.com/rails/importmap-rails
+function createStar() {
+    const star = document.createElement('div');
+    star.className = 'star';
+    const size = Math.random() * 5;
+    star.style.width = `${size}px`;
+    star.style.height = `${size}px`;
+    star.style.left = `${Math.random() * window.innerWidth}px`;
+    star.style.top = `${Math.random() * window.innerHeight}px`;
+    document.body.appendChild(star);
+    return star;
+}
+
 function glitter() {
-    const stars = document.querySelectorAll('.star');
-  
-    stars.forEach(star => {
-      const size = Math.random() * 5;
-      star.style.width = `${size}px`;
-      star.style.height = `${size}px`;
-      star.style.left = `${Math.random() * innerWidth}px`;
-      star.style.top = `${Math.random() * innerHeight}px`;
-    });
-  }
-  
+    for(let i = 0; i < 100; i++) {
+        const star = createStar();
+        setTimeout(() => {
+            star.style.opacity = 0;
+            setTimeout(() => {
+                star.style.opacity = 1;
+            }, Math.random() * 2000);
+        }, Math.random() * 2000);
+        setTimeout(() => {
+            star.style.opacity = 0;
+            setTimeout(() => {
+                star.remove();
+            }, 1000);
+        }, Math.random() * 5000 + 3000);
+    }
+    setTimeout(glitter, 5000);
+}
+
+glitter();
+
+setInterval(createStar, 1000);
