@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 
 <html>
+
   <head>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -15,43 +16,15 @@
   </head>
 
   <body>
-    <div id="circle">
-      <a href="?sign=Belier">
-        <div id="Belier" class="zodiac">Bélier</div>
-      </a>
-      <a href="?sign=Taureau">
-        <div id="Taureau" class="zodiac">Taureau</div>
-      </a>
-      <a href="?sign=Gemeaux">
-        <div id="Gemeaux" class="zodiac">Gémeaux</div>
-      </a>
-      <a href="?sign=Cancer">
-        <div id="Cancer" class="zodiac">Cancer</div>
-      </a>
-      <a href="?sign=Lion">
-        <div id="Lion" class="zodiac">Lion</div>
-      </a>
-      <a href="?sign=Vierge">
-        <div id="Vierge" class="zodiac">Vierge</div>
-      </a>
-      <a href="?sign=Balance">
-        <div id="Balance" class="zodiac">Balance</div>
-      </a>
-      <a href="?sign=Scorpion">
-        <div id="Scorpion" class="zodiac">Scorpion</div>
-      </a>
-      <a href="?sign=Sagittaire">
-        <div id="Sagittaire" class="zodiac">Sagittaire</div>
-      </a>
-      <a href="?sign=Capricorne">
-        <div id="Capricorne" class="zodiac">Capricorne</div>
-      </a>
-      <a href="?sign=Verseau">
-        <div id="Verseau" class="zodiac">Verseau</div>
-      </a>
-      <a href="?sign=Poissons">
-        <div id="Poissons" class="zodiac">Poissons</div>
-      </a>
+
+
+        <div id="circle">
+      <% zodiac_signs = ["Belier", "Taureau", "Gemeaux", "Cancer", "Lion", "Vierge", "Balance", "Scorpion", "Sagittaire", "Capricorne", "Verseau", "Poissons"] %>
+      <% zodiac_signs.each do |sign| %>
+        <a href="?sign=<%= sign %>">
+          <div id="<%= sign %>" class="zodiac"><%= sign %></div>
+        </a>
+      <% end %>
     </div>
 
     <div id="horoscope">
@@ -75,7 +48,7 @@
 
     <footer>
       <div id="footer">
-        <p class="footer-p">2024 Monoroscope. Tout droit reservé</p>
+        <p class="footer-p">2024 Horoscope. Tout droit reservé</p>
       </div>
     </footer>
        <div id="bulle_droite">

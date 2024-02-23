@@ -1,5 +1,4 @@
 <p style="color: green"><%= notice %></p>
-
 <div id="predictions">
   <% if @prediction %>
     <%= render @prediction %>
@@ -10,5 +9,4 @@
     <p>Il n'y a pas d'horoscope pour ce signe pour le moment</p>
   <% end %>
 </div>
-
 <%= link_to "New prediction", new_prediction_path %>
