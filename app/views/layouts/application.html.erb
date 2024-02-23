@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 
 <html>
-
   <head>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -10,23 +9,20 @@
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
-
     <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
     <%= javascript_importmap_tags %>
   </head>
-
   <body>
-    
-
-        <div id="circle">
+    <div id="circle">
       <% zodiac_signs = ["Belier", "Taureau", "Gemeaux", "Cancer", "Lion", "Vierge", "Balance", "Scorpion", "Sagittaire", "Capricorne", "Verseau", "Poissons"] %>
       <% zodiac_signs.each do |sign| %>
         <a href="?sign=<%= sign %>">
-          <div id="<%= sign %>" class="zodiac"><%= sign %></div>
+          <div id="<%= sign %>" class="zodiac">
+            <%= image_tag "#{sign}.svg" %>
+          </div>
         </a>
       <% end %>
     </div>
-
     <div id="horoscope">
       <div id="horoscope-title">
         <h1>Horoscope</h1>        
@@ -35,23 +31,19 @@
         <h3>Choisissez votre signe astrologique pour voir votre horoscope du jour</h3>
       </div>
     </div>
-
     <div id="texte-horoscope">
       <%= yield %>
     </div>
-
- 
-
     <div id="bulle_gauche">
       <%= image_tag "bulle_gauche.png" %>
     </div>
-
     <footer>
       <div id="footer">
         <p class="footer-p">2024 Horoscope. Tout droit reservé</p>
       </div>
     </footer>
-       <div id="bulle_droite">
+    <div id="bulle_droite">
       <%= image_tag "bulle_droite.png" %>
     </div>
+  </body>
 </html>
