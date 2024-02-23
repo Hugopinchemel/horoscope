@@ -13,7 +13,16 @@
     <%= javascript_importmap_tags %>
   </head>
   <body>
-    <div id="circle">
+
+    <div id="horoscope">
+      <div id="horoscope-title">
+        <a class="horoscope-title" href="/"><h1>Horoscope<h1></a>
+      </div>
+      <div id="horoscope-text">
+        <h3>Choisissez votre signe astrologique pour voir votre horoscope du jour</h3>
+      </div>
+    </div>
+        <div id="circle">
       <% zodiac_signs = ["Belier", "Taureau", "Gemeaux", "Cancer", "Lion", "Vierge", "Balance", "Scorpion", "Sagittaire", "Capricorne", "Verseau", "Poissons"] %>
       <% zodiac_signs.each do |sign| %>
         <a href="?sign=<%= sign %>">
@@ -22,14 +31,6 @@
           </div>
         </a>
       <% end %>
-    </div>
-    <div id="horoscope">
-      <div id="horoscope-title">
-        <h1>Horoscope</h1>        
-      </div>
-      <div id="horoscope-text">
-        <h3>Choisissez votre signe astrologique pour voir votre horoscope du jour</h3>
-      </div>
     </div>
     <div id="texte-horoscope">
       <%= yield %>
