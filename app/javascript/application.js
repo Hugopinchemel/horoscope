@@ -11,5 +11,3 @@ function glitter() {
     });
   }
   
-setInterval(glitter, 1000);
-alert('ok');
