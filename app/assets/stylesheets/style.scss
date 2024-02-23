@@ -19,9 +19,9 @@ body::before {
     position: absolute;
     background: white;
     border-radius: 50%;
-    z-index: 0; // This will ensure the stars are behind the content of the body
+    z-index: 0;
     opacity: 0;
-    transition: opacity 1s ease-in-out; // This will make the fading smoother
+    transition: opacity 1s ease-in-out;
 }
 
 .star::before, .star::after {
