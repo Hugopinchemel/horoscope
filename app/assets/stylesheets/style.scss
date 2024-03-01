@@ -52,6 +52,8 @@ body {
     line-height: 1.6;
     margin-left: 20px;
     color: $color;
+    max-width: 40vw;
+    word-break: break-all;
 
     h1 {
         font-family: $font-stack2;
@@ -186,7 +188,6 @@ body {
         left: 65%;
         transform: translate(-50%, -50%);
     }
-
 
     #prediction {
         text-align: center;
